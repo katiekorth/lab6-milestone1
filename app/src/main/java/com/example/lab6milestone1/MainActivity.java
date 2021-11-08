@@ -12,7 +12,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MainActivity extends FragmentActivity {
 
-    private final LatLng mDestinationLatLng = new LatLng(-33.8523341, 151.2106085);
+    private final LatLng mDestinationLatLng = new LatLng(43.0754097,-89.4036975);
     private GoogleMap mMap;
 
     @Override
@@ -22,7 +22,7 @@ public class MainActivity extends FragmentActivity {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_map);
         mapFragment.getMapAsync(googleMap -> {
             mMap = googleMap;
-            googleMap.addMarker(new MarkerOptions().position(mDestinationLatLng).title("Destination"));
+            googleMap.addMarker(new MarkerOptions().position(mDestinationLatLng).title("Bascom Hall"));
         });
     }
 }
